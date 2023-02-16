@@ -1,15 +1,17 @@
 import java.util.Objects;
-
 import static java.lang.Double.valueOf;
 
 
+@FunctionalInterface
 interface Predicate<T> {
     boolean test(T t);
 }
 
+@FunctionalInterface
 interface Consumer<T> {
     void accept(T t);
 }
+@FunctionalInterface
 interface Function<T, R> {
     R apply(T t);
 }
