@@ -1,25 +1,6 @@
 import java.util.Objects;
 import static java.lang.Double.valueOf;
-
-
-@FunctionalInterface
-interface Predicate<T> {
-    boolean test(T t);
-}
-
-@FunctionalInterface
-interface Consumer<T> {
-    void accept(T t);
-}
-@FunctionalInterface
-interface Function<T, R> {
-    R apply(T t);
-}
-@FunctionalInterface
-interface Supplier<T> {
-    T get();
-}
-
+import java.util.function.*;
 public class Main {
     public static void main(String[] args) {
         Predicate<Integer> number = x -> x > 0;
